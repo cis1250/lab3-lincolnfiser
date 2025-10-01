@@ -1,19 +1,20 @@
-# Fibonacci Sequence Exercise
+# Simple Fibonacci sequence
 
-while True:
-    try:
-        terms = int(input("Enter the number of terms in the Fibonacci sequence: "))
-        if terms > 0:
-            break
-        else:
-            print("Please enter a positive integer.")
-    except ValueError:
-        print("Please enter a positive integer.")
+# Ask user for number of terms
+terms = input("Enter the number of terms: ")
 
-# Calculate Fibonacci sequence
-a, b = 0, 1
-for _ in range(terms):
-    print(a, end=" ")
-    a, b = b, a + b
+# Keep asking until a positive integer is entered
+while not terms.isdigit() or int(terms) <= 0:
+    print("Please enter a positive integer.")
+    terms = input("Enter the number of terms: ")
 
-print()  # newline at the end
+terms = int(terms)
+
+# Generate Fibonacci sequence
+a = 0
+b = 1
+for i in range(terms):
+    print(a)
+    temp = a + b
+    a = b
+    b = temp
