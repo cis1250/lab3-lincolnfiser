@@ -1,20 +1,20 @@
-# Simple Fibonacci sequence
+# Fibonacci Sequence Exercise
 
-# Ask user for number of terms
-terms = input("Enter the number of terms: ")
+# Step 1: Prompt the user
+while True:
+    user_input = input("Enter the number of terms: ")
+    
+    # Step 2: Validate input
+    if user_input.isdigit() and int(user_input) > 0:
+        terms = int(user_input)
+        break
+    else:
+        print("Please enter a positive integer.")
 
-# Keep asking until a positive integer is entered
-while not terms.isdigit() or int(terms) <= 0:
-    print("Please enter a positive integer.")
-    terms = input("Enter the number of terms: ")
+# Step 3: Calculate and print Fibonacci sequence
+a, b = 0, 1
+for _ in range(terms):
+    print(a, end=" ")
+    a, b = b, a + b
 
-terms = int(terms)
-
-# Generate Fibonacci sequence
-a = 0
-b = 1
-for i in range(terms):
-    print(a)
-    temp = a + b
-    a = b
-    b = temp
+print()  # print a new line at the end
