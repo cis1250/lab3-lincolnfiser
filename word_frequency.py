@@ -21,20 +21,20 @@ while not is_sentence(user_sentence):
     user_sentence = input("Enter a sentence: ")
 
 # Remove punctuation and lowercase the sentence
-clean_sentence = re.sub(r'[^\w\s]', '', user_sentence).lower()
+clean_sentence = re.sub(r'[^\w\s]', '', user_sentence).lower()  #This is what I used to remove the punctuation and lower case
 
 # Split sentence into words
-words_in_sentence = clean_sentence.split()
+words_in_sentence = clean_sentence.split() #this takes the string and seprates it into a list of words
 
 # Lists to store unique words and their frequencies
-unique_words = []
+unique_words = [] #These are both empty lists where the counts will be stored
 frequencies = []
 
 # Count frequencies
-for word in words_in_sentence:
-    if word in unique_words:
-        index = unique_words.index(word)
-        frequencies[index] = frequencies[index] + 1
+for word in words_in_sentence:  #This starts a loop for the variable(words_in_sentence)
+    if word in unique_words:   #checks if word has already been seen
+        index = unique_words.index(word) # finds the position/index of that word in the unique_words list.
+        frequencies[index] = frequencies[index] + 1 #Increases the count of that word by 1
     else:
         unique_words += [word]      # add word to the list
         frequencies += [1]          # start frequency at 1
