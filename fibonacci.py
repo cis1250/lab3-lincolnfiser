@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 # Fibonacci Sequence Exercise
 
 # Step 1: Prompt the user
@@ -5,7 +7,7 @@ while True:
     user_input = input("Enter the number of terms: ")
     
     # Step 2: Validate input
-    if user_input.isdigit() and int(user_input) > 0:
+    if int(user_input) > 0:
         terms = int(user_input)
         break
     else:
