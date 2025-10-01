@@ -39,4 +39,4 @@ for word in words_in_sentence:
 
 # Print results
 for i in range(len(unique_words)):
-    print(f"{unique_words[i]}: {frequencies[i]}")
+    print(unique_words[i] + ": " + str(frequencies[i]))
