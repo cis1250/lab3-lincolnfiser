@@ -1,4 +1,5 @@
 # Fibonacci Sequence Exercise
+!/usr/bin/env python3
 
 while True:
     user_input = input("Enter the number of terms in the Fibonacci sequence: ")
@@ -24,7 +25,7 @@ print(" ".join(map(str, fib_sequence)))
 
 
 
-!/usr/bin/env python3
+
 # Fibonacci Sequence Exercise
 # TODO: (Read detailed instructions in the Readme file)
 # Prompt the user for the number of terms.
