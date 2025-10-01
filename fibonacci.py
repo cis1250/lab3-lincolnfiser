@@ -12,9 +12,6 @@ while True:
         print("Please enter a positive integer.")
 
 # Step 3: Calculate and print Fibonacci sequence
-a, b = 0, 1
-for _ in range(terms):
-    print(a, end=" ")
-    a, b = b, a + b
+
 
 print()  # print a new line at the end
