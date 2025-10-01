@@ -37,22 +37,19 @@ while (is_sentence(user_sentence) == False):
 
 words_in_sentence = sentence.split()
 
-# Lists for unique words and their frequencies
+# Lists to store unique words and their frequencies
 words = []
 frequencies = []
 
 # Count word frequencies
 for word in words_in_sentence:
     if word in words:
-        index = words.index(word)
-        frequencies[index] += 1
+        index = words.index(word)  # find where the word is in the list
+        frequencies[index] += 1    # increase its count by 1
     else:
-        words.append(word)
-        frequencies.append(1)
+        words.append(word)         # add new word to list
+        frequencies.append(1)      # set its count to 1
 
 # Print results
 for i in range(len(words)):
     print(words[i], ":", frequencies[i])
-    
-
-
