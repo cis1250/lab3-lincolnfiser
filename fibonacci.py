@@ -1,9 +1,3 @@
-#!/usr/bin/env python3
-
-# Fibonacci Sequence Exercise
-
-#!/usr/bin/env python3
-
 # Fibonacci Sequence Exercise
 
 while True:
@@ -16,13 +10,16 @@ while True:
     else:
         print("Please enter a positive integer.")
 
-# Calculate and print Fibonacci sequence
+# Calculate Fibonacci sequence
+fib_sequence = []
 a, b = 0, 1
 for _ in range(terms):
-    print(a, end=" ")
+    fib_sequence.append(a)
     a, b = b, a + b
 
-print()  # new line at the end
+# Print all numbers in one line
+print(" ".join(map(str, fib_sequence)))
+
 
 
 
