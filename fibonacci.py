@@ -2,6 +2,10 @@
 
 # Fibonacci Sequence Exercise
 
+#!/usr/bin/env python3
+
+# Fibonacci Sequence Exercise
+
 while True:
     user_input = input("Enter the number of terms in the Fibonacci sequence: ")
 
@@ -19,6 +23,7 @@ for _ in range(terms):
     a, b = b, a + b
 
 print()  # new line at the end
+
 
 
 
