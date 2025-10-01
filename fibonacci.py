@@ -19,7 +19,7 @@ while True:
 # Calculate and print Fibonacci sequence
 a, b = 0, 1
 for _ in range(terms):
-    print(a, end=" ")
+    print(a, end = " ")
     a, b = b, a + b
 
 print()  # new line at the end
