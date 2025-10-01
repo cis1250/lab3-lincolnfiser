@@ -1,5 +1,5 @@
 # Fibonacci Sequence Exercise
-!/usr/bin/env python3
+
 
 while True:
     user_input = input("Enter the number of terms in the Fibonacci sequence: ")
